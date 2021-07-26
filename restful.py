@@ -32,7 +32,7 @@ def token_required(f):
 
 
 
-uri = "mongodb+srv://rajesh:rajesh@imdb.8hily.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+uri = "mongodb+srv://<USERNAME>:<PASSWORD>@imdb.8hily.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 client = MongoClient(uri)
 db= client.list_database_names()
 imdb = client.imdb
