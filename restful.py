@@ -56,7 +56,7 @@ class getmovie(Resource):
 
 class getuser(Resource):
     def get(self):
-        user = imdb.user.find_one({}, {"_id": 0})
+        user = imdb.user.find_one({}, {"_id": 0,"name":1,"email":1})
         return jsonify(user=user)
 
 
