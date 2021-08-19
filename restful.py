@@ -36,8 +36,7 @@ uri = "mongodb+srv://<USERNAME>:<PASSWORD>@imdb.8hily.mongodb.net/myFirstDatabas
 client = MongoClient(uri)
 db= client.list_database_names()
 imdb = client.imdb
-myuser = imdb.user.find_one({}, {"_id": 0})
-print(myuser)
+
 
 class login(Resource):
     def post(self):
