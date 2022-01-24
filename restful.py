@@ -37,7 +37,7 @@ client = MongoClient(uri)
 db= client.list_database_names()
 imdb = client.imdb
 
-
+print("Testing CICD")
 class login(Resource):
     def post(self):
         auth = request.get_json()
